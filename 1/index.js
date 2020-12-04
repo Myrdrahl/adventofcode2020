@@ -5,8 +5,9 @@ let expenses = []
 function checkFor2020(expenses) {
     // console.log(expenses) array er kommet inn hit også!
     expenses.forEach(element => {
-        console.log(element)
         let rest = (2020 - element)
+        console.log("Element: ", element)
+        console.log("Rest: ", rest)
         if (expenses.includes(rest)) {
             console.log("Winning: " , element , rest)
         }
