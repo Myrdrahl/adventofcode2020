@@ -6,11 +6,10 @@ function checkFor2020(expenses) {
     // console.log(expenses) array er kommet inn hit også!
     expenses.forEach(element => {
         let rest = (2020 - element)
-        console.log("Element: ", element)
-        console.log("Rest: ", rest)
-        if (expenses.includes(rest)) {
-            console.log("Winning: " , element , rest)
-        }
+        //console.log("Element: ", element)
+        //console.log("Rest: ", rest)
+        expenses.includes(rest) ? console.log("Winning: ",element ,rest) : console.log("Not the one")
+        
     })
 }
 
@@ -26,7 +25,7 @@ async function processLines() {
         //console.log(line)
         expenses.push(line)
     }
-    // console.log(expenses) array er komplett
+    //console.log(expenses) array er komplett
     checkFor2020(expenses)
 }
 
