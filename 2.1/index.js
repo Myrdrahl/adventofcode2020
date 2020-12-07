@@ -3,7 +3,7 @@ let passwords = fs.readFileSync('passwords.txt').toString().split(/\n/)
 //console.log(passwords[999])
 let valid = 0
 //
-for (let i = 0; i < passwords.length; i++){
+for (let i = 0; i < 1; i++){
     let stuff = passwords[i].split(' ')
     let highandlow = stuff[0].split('-')
     highandlow[0] = parseInt(highandlow[0])+1
