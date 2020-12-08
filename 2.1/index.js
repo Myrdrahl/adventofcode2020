@@ -12,6 +12,13 @@ for (let i = 0; i < passwords.length; i++){
     //console.log(stuff[2])
     //console.log(firstPos, stuff[2].charAt(firstPos))
     //console.log(secondPos, stuff[2].charAt(secondPos))
-    stuff[2].charAt(firstPos) === letter || stuff[2].charAt(secondPos) === letter ? valid++ : null
+    if (stuff[2].charAt(firstPos) === letter && stuff[2].charAt(secondPos) !== letter ) {
+        valid++
+    } else if (stuff[2].charAt(firstPos) !== letter && stuff[2].charAt(secondPos) === letter ) {
+        valid++
+    } else {
+        null
+    }
+     
 }
 console.log(valid)
